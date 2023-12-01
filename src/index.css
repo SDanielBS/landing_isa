@@ -9,8 +9,8 @@ body {
   line-height: 1.5;
   font-weight: 400;
 
-  color: #ffffffde;
-  background-color: #03638c;
+  color: #000000;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,5 +19,5 @@ body {
 }
 
 a {
-  color: #009adb;
+  color: #fdba30;
 }
