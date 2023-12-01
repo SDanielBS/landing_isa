@@ -1,0 +1,23 @@
+.team_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
+}
+
+.team_card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 2rem;
+}
+
+.team_card span {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.team_card .team_id {
+  font-family: sans-serif;
+  font-style: italic;
+}

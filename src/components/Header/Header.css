@@ -1,0 +1,175 @@
+.main-header {
+  background-color: #1a202c;
+  width: 100%;
+  /* height: 65px; */
+  padding: 1rem 0;
+}
+
+.main-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-nav, .main-nav.active {
+  position: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-nav-responsive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-nav > ul > li {
+  list-style: none;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  padding: .8rem 1rem;
+}
+
+.main-nav-link:hover {
+  cursor: pointer;
+  background-color: #00415d;
+}
+
+.text-logo {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-logo a {
+  color: #ffffffde;
+  text-decoration: none;
+}
+
+.text-logo span {
+  font-size: .7rem;
+  display: block;
+}
+
+.bg-nav.active {
+  display: none;
+  background-color: #151a23e3;
+  position: fixed;
+  z-index: 1000;
+  left: 0%;
+  right: 0%;
+  top: -100%;
+  bottom: 0%;
+}
+
+.bg-nav {
+  display: none;
+}
+
+.main-nav.active ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.burger-container {
+  display: none;
+}
+
+@media(max-width: 1079px) {
+  .main-nav {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: -100%;
+    transform: scale(.05);
+    transition: all .3s ease-in-out;
+  }
+
+  .main-nav.active {
+    transform: scale(1);
+    position: fixed;
+    z-index: 2000;
+    left: 10%;
+    right: 10%;
+    top: 15%;
+    bottom: 7%;
+  }
+
+  nav.main-nav.active::before {
+    content: "";
+    position: inherit;
+    width: 100%;
+    height: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgb(19 34 46), rgb(19 34 46 / 50%), transparent);
+  }
+
+  nav.main-nav.active::after {
+    content: "";
+    position: inherit;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgb(19 34 46), rgb(19 34 46 / 50%), transparent);
+  }
+
+  .main-nav.active ul {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .main-nav li {
+    display: flex;
+    font-size: 1.8rem;
+  }
+
+  .main-nav > ul > li {
+    display: contents;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .bg-nav {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    transition: all .3s ease-in-out;
+  }
+
+  .bg-nav.active {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all .3s ease-in-out;
+  }
+
+  .burger-container {
+    display: flex;
+    z-index: 2000;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

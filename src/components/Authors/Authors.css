@@ -1,0 +1,50 @@
+.author-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border: 1px #2d3a55 solid;
+  background-color: #1d2638;
+  border-radius: .5rem;
+  padding: 2rem;
+  max-width: 850px;
+  align-self: center;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.author-data img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.author-data .author-name {
+  font-size: 1.3rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.author-rol{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.author-comment {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
